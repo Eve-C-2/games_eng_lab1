@@ -12,9 +12,9 @@ SET(OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}/bin/")
 SET(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${OUTPUT_DIRECTORY})
 
 #### Add External Dependencies ####
-add_subdirectory("lib/SFML")
-set(SFML_INCS "lib/SFML/include")
-link_directories("${CMAKE_BINARY_DIR}/lib/SFML/lib")
+add_subdirectory("lib/SFML-2.6.2")
+set(SFML_INCS "lib/SFML-2.6.2/include")
+link_directories("${CMAKE_BINARY_DIR}/lib/SFML-2.6.2/lib")
 
 #### Practical 1 ####
 add_executable(lab_1 main.cpp)
